@@ -1,32 +1,31 @@
 import React from 'react';
-
+import "./App.css"
 import NavBar from './NavBar/NavBar';
+import Footer from './Footer/Footer';
 import { BrowserRouter as Router,Route,Routes} from "react-router-dom"
-
-
 import Home from './Pages/Home';
 import Contact from './Pages/Contact'
 import Services from './Pages/Services'
-import FAQ from './Pages/FAQ'
+import FAQ from './Pages/Gallery'
 import Abouts from './Pages/Abouts'
+import Gallery from './Pages/Gallery';
 
 function App() {
   return (
 
     <div className="container">
-      Hello World
-      
-      
-      <Router>
+       <Router>
          <NavBar/>
+
           <Routes>
          <Route exact path='/' element={<Home/>}/>
        
          <Route  path='/abouts' element={<Abouts/>} />
          <Route  path='/contact' element={<Contact/>} />
          <Route  path='/services' element={<Services/>} />
-         <Route  path='/faq' element={<FAQ/>} />
-         </Routes>
+         <Route  path='/gallery' element={<Gallery/>} />
+        </Routes>
+         <Footer/>
          
       </Router>
         

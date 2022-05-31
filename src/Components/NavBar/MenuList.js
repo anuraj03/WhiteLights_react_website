@@ -3,17 +3,25 @@ export const MenuList =[
     title:"Home",
     url:"/",
 },
+
 {
-    title :"Contact",
-    url : "/contact",
+    title :"Gallery",
+    url : "/gallery",
 },
-{
-    title :"FAQ",
-    url : "/faq",
-},
+
 {
     title :"Services",
     url : "/services",
+},
+{
+    title :"Abouts",
+    url : "/abouts",
+},
+
+
+{
+    title :"Contact",
+    url : "/contact",
 },
 
 ];

@@ -1,96 +1,119 @@
+
+
 .navbar{
+
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 30px;
-    padding: 20px;
+    height: 20px;
+    padding: 35px;
     display: flex;
     justify-content: space-between;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 2);
+    color: white;
+    z-index: 99;
     
 
 
-
 }
-
+.menubtn{
+    display: none;
+}
+.fas{
+    cursor: pointer;
+}
+.menubtn .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+.menubtn .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
 
 .logo{
     width: 5rem;
-    height: 4rem;
+    height: 5rem;
+    padding-top: 0.8rem;
    
    
 }
-.hide-on-mobile{
-    display: none !important;
-}
-@media (min-width:992px){
-    .hide-on-mobile{
-        display: unset !important;
-    }
-    .hide-on-desktop{
-        display: none !important;
-    }
-}
+
+
 .nav-list{
     list-style: none;
     display: inline;
+    align-items: center;
+    justify-content: space-between;
+    
 }
+
 .nav-list li{
     display: inline;
-    padding: 0 2rem;
+    
 
 }
 .nav-list li a{
     text-decoration: none;
     color: white;
+    font-weight: 200;
+    padding: 1.5px 10px;
 }
-.nav-list li a:hover{
-   
-    color: rgb(149, 151, 145);
+.nav-list li a:hover,
+.nav-list li a:active{
+   cursor: pointer;
+   background-color: white;
+   border-radius: 5px;
+   color: black;
+   transform:  all 0.8s ease-in-out;;
 }
 
-.menubtn{
-    margin-left: 1.5rem;
-    z-index: 4;
+@media screen and (max-width:800px) {
+     
+      .nav-list li a{
+          font-size: 14px;
+          margin-left: 10px;
+      }
+      
+      
+}
+@media screen and (max-width:600px){
+      .menubtn{
+          display: block;
+      }
+      .nav-list{
+          flex-direction: column;
+          width: 100%;
+          position : absolute;
+          background-color:rgba(0, 0, 0, 0.7);
+          padding: 20px;
+          right: 0;
+          top: 64px;
+          transition: all 0.5s ease-in-out;
+      }
+
+     
+    .nav-list li{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+
+    } 
+    .nav-list li a{
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+    .nav-list.close{
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+        
+}
+
     
 
 
-}
-.menubtn div{
-width: 35px;
-height: 5px;
-background-color: white;
-margin: 5px 5px;
-margin-right: 2rem;
 
-
-}
-.mobile-nav{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center ;
-    background-color:black ;
-    align-items: center;
-    flex-direction:wrap ;
-    z-index: 3;
-    position: absolute;
-    top: -100vh;
-    left: 0;
-    transition: 1s;
-}
-.mobile-nav li{
-    text-decoration: none;
-    
-   
-    display: block;
-
-}
-.mobile-nav a{
-    color: white;
-    text-decoration: none;
-    margin: 3rem 0;
-    font-size: 2rem;
-    transition-delay: 1s;
-}
