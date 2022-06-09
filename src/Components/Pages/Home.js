@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link}from 'react-router-dom'
-import insta from './insta.png'
+import insta from '../../image/insta.png'
+
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
 					<h5>Photography - Videography</h5>
 					
 					<ul className='dis' >
-						<li  className='instagram' ><a href="https://www.instagram.com/whitelightsfilms/"><img  className='insta-icon' src={insta}></img></a></li>
+						<li  className='instagram' ><a href="https://www.instagram.com/whitelightsfilms/"><img  className='insta-icon' src={insta} alt='instagram'/></a></li>
 						
 			        </ul>
 					<Link to='/gallery'className='btn1' >Gallery </Link>

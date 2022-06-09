@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "./logo.jpg"
 import "./NavBar.css"
 import {MenuList} from "./MenuList"
 import{NavLink ,Link} from "react-router-dom"
@@ -22,7 +21,7 @@ function NavBar() {
   return (
     <nav className='navbar'>
       <div className=''>
-        <Link to='/'><img  className='logo' src={logo}></img></Link>
+        <Link to='/'><img  className='logo' src='Logo/logo.png' alt='logo'/></Link>
       </div>
       <div className='menubtn' onClick={handleClick}>
         <i className={clicked ? "fas fa-times":"fas fa-bars"}></i>

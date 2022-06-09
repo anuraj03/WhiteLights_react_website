@@ -1,0 +1,7 @@
+const IMAGES={
+    
+       img:require('./')
+    
+    
+    
+}
