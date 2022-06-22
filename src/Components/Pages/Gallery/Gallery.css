@@ -20,8 +20,9 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding:0 20px ;
-    margin-top: 4.4rem;
-    background-color: white;
+  
+    
+    background-color: rgb(255, 255, 255,0.9);
     
     
 
@@ -49,7 +50,7 @@
       -webkit-column-count: 2;
       -moz-column-count: 2;
        column-count: 2;
-       margin-top: 4.4rem;
+       
     }
 
 
@@ -64,7 +65,7 @@
     -moz-column-width: 100%;
     column-width: 100%;
     padding:0 20px ;
-    margin-top: 4.4rem;
+   
       
       
     }
@@ -80,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(255, 255, 255,0.7);
+    background-color:rgb(255, 255, 255,0.9);
     transition: opacity .4s ease, viisbility .4s ease ,transform .5s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -106,18 +107,18 @@
    display: block;
    line-height: 0;
    box-sizing: border-box;
-   padding: 2px 0 15px;
+   padding: 2px 0 17px;
    margin: 0 auto;
  }  
- .model.open svg{
+ .model.open .close-icon{
    position: fixed;
    top: 0;
    right: 10px;
-   width: 2rem;
-   height: 2 rem;
+   width: 3rem;
+   height: 5 rem;
    padding: 5px;
-   background-color:black ;
-  color: white;
+   
+  
   cursor: pointer;
 
  }
@@ -130,4 +131,16 @@
 
 
  }
- 
+.vimage{
+  height: 6rem;
+ width: 14.7rem;
+  margin-top: 0.4rem;
+  
+
+
+}
+ .vgallery{
+  background-color: white;
+  margin-top: 4.4rem;
+  
+ }

@@ -4,7 +4,8 @@ import "./Footer.css"
 function Footer() {
   return (
     <div className='footer'>
-      Footer</div>
+      @All rights owned by whitelights
+      </div>
   )
 }
 

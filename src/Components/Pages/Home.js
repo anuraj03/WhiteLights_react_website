@@ -4,6 +4,7 @@ import insta from '../../image/insta.png'
 
 
 function Home() {
+	
   return (
     <div className='container2'>
      	<div className='content'>

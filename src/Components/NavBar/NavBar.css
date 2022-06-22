@@ -65,7 +65,7 @@
    cursor: pointer;
    background-color: white;
    border-radius: 5px;
-   color: black;
+   color: rgb(0, 0, 0);
    transform:  all 0.8s ease-in-out;;
 }
 
@@ -86,10 +86,10 @@
           flex-direction: column;
           width: 100%;
           position : absolute;
-          background-color:rgba(0, 0, 0, 0.7);
+          background-color:rgba(0, 0, 0, 0.3);
           padding: 20px;
           right: 0;
-          top: 64px;
+          top: 4rem;
           margin-top: 0.4rem;
           transition: all 0.5s ease-in-out;
       }
